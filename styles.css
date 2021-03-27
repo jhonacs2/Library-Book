@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'New Tegomin', serif;
+}
+
+.add-book {
+    background: #ff7b5a;
+    width: 100%;
+    max-width: 350px;
+    margin-right: 1rem;
+    
+}
+
+.add-book form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    
+}
+
+.formBook:focus{
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.add-book form input {
+    border-radius: 5px 5px 0 0;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+}
+
+.add-book form label{
+    padding: 1rem
+}
+
+.add-book form select{
+    border-radius: 5px 5px 0 0;
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    background: white;
+}
+
+.add-book form [type="submit"]{
+    color: rgb(0, 0, 0);
+    background: wheat;
+    margin: 1rem;
+    cursor: pointer;
+    padding: 0.4rem;
+    font-family: 'New Tegomin', serif;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
