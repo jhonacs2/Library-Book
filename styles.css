@@ -12,13 +12,14 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     font-family: 'New Tegomin', serif;
+    
 }
 
 .add-book {
     background: #ff7b5a;
     width: 100%;
     max-width: 350px;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     
 }
 
@@ -56,7 +57,7 @@ main{
     background: white;
 }
 
-.add-book form [type="submit"]{
+.add-book form [type="button"]{
     color: rgb(0, 0, 0);
     background: wheat;
     margin: 1rem;
@@ -67,8 +68,41 @@ main{
     font-size: 1rem;
 }
 
+.books{
+    width: 100%;
+    max-width: 700px;
+    background: #80bdff;
+    text-align: center;
+}
 
+.card-book{
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0.2);
+    transition: 0.3s;
+    width: 25%;
+    margin: 1rem;
+}
 
+.card-book:hover{
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0.2);
+}
+
+.bookstore{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container h4,p {
+    margin: 0;
+}
+
+.close {
+    width: 10%;
+    color: red;
+    cursor: pointer;
+    padding: 0.2rem;
+    margin: 0;
+    border: none;
+}
 
 
 
