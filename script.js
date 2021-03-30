@@ -1,5 +1,7 @@
 const addBook = document.querySelector('#add');
 const bookstoreDiv = document.querySelector('.bookstore');
+let hijosDelete = document.querySelectorAll('.card-book');
+// console.log(hijosDelete)
 let buttonX = document.querySelectorAll('.close');
 
 let contador = 0;
@@ -61,13 +63,14 @@ function showBookDom(){
         div.appendChild(read);
         read.textContent = myLibrary[i].read;
         div.appendChild(equis);
+        hijosDelete = document.querySelectorAll('.card-book');
+        // console.log(hijosDelete)
         buttonX = document.querySelectorAll('.close');
         // console.log(buttonX)
-        
+        buttonX.forEach(element => element.addEventListener('click', deleteBook));
         
 
     }
-    buttonX.forEach(element => element.addEventListener('click', deleteBook));
     contador ++;
     // console.log(myLibrary)
     
@@ -76,14 +79,16 @@ function showBookDom(){
 
 function deleteBook(){
     
-    const hijosDelete = document.querySelectorAll('.card-book');
     // console.log(hijosDelete)
     hijosDelete.forEach((number,index)=>{
         number.addEventListener('click', () => {
+           
+           
             myLibrary.splice(index,1)
-            console.log(number)
-            bookstoreDiv.removeChild(number);
+            
+            bookstoreDiv.removeChild(hijosDelete[index])
             contador--;
+            
             
             
         })

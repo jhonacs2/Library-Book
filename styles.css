@@ -5,18 +5,28 @@ body{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    background: url('https://blogs.sap.com/wp-content/uploads/2020/11/library-1.jpg');
+    max-width: 100%;
+    height: auto;
+    
+    
 }
 
 main{
+    width: 100%;
+    max-width: 1050px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     font-family: 'New Tegomin', serif;
+    margin: 1rem auto;
     
 }
 
 .add-book {
     background: #ff7b5a;
+    filter:alpha(opacity=90);
+    -moz-opacity:.90;opacity:.90;
     width: 100%;
     max-width: 350px;
     /* margin-right: 1rem; */
@@ -73,6 +83,8 @@ main{
     max-width: 700px;
     background: #80bdff;
     text-align: center;
+    filter:alpha(opacity=90);
+    -moz-opacity:.90;opacity:.90;
 }
 
 .card-book{
